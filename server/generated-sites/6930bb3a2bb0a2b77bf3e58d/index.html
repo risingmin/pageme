@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sungmin Lee - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'primary': '#6c5b7b',
+              'secondary': '#d9d0d3',
+              'accent': '#a376b5',
+              'background': '#f8f8ff',
+            },
+            fontFamily: {
+              'poppins': ['Poppins', 'sans-serif'],
+            },
+          }
+        }
+      </script>
+</head>
+<body class="bg-background font-poppins">
+
+    <!-- Hero Section -->
+    <section class="py-12 bg-gradient-to-r from-primary to-accent text-white">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-bold">Sungmin Lee</h1>
+            <p class="text-lg mt-4">Aspiring AI Engineer | Data Enthusiast</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-12 px-4 md:px-8 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-6">About Me</h2>
+            <p class="text-gray-700 leading-relaxed">
+                A highly motivated and detail-oriented Computer Science student at Purdue University, pursuing a Bachelor of Science degree with a focus on Artificial Intelligence. Passionate about leveraging data and technology to solve real-world problems.  Experience in data analysis, machine learning, and software development.  Seeking opportunities to contribute to innovative projects and continue learning in a dynamic environment.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-12 px-4 md:px-8 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-6">Technical Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="bg-secondary rounded-full py-2 px-4 text-primary hover:bg-accent hover:text-white transition duration-300">Python</div>
+                <div class="bg-secondary rounded-full py-2 px-4 text-primary hover:bg-accent hover:text-white transition duration-300">R</div>
+                <div class="bg-secondary rounded-full py-2 px-4 text-primary hover:bg-accent hover:text-white transition duration-300">Java</div>
+                <div class="bg-secondary rounded-full py-2 px-4 text-primary hover:bg-accent hover:text-white transition duration-300">C</div>
+                <div class="bg-secondary rounded-full py-2 px-4 text-primary hover:bg-accent hover:text-white transition duration-300">JavaScript</div>
+                <div class="bg-secondary rounded-full py-2 px-4 text-primary hover:bg-accent hover:text-white transition duration-300">HTML/CSS</div>
+                <div class="bg-secondary rounded-full py-2 px-4 text-primary hover:bg-accent hover:text-white transition duration-300">Jupyter Notebook</div>
+                <div class="bg-secondary rounded-full py-2 px-4 text-primary hover:bg-accent hover:text-white transition duration-300">Git</div>
+                <div class="bg-secondary rounded-full py-2 px-4 text-primary hover:bg-accent hover:text-white transition duration-300">VS Code</div>
+                <div class="bg-secondary rounded-full py-2 px-4 text-primary hover:bg-accent hover:text-white transition duration-300">IntelliJ</div>
+                <div class="bg-secondary rounded-full py-2 px-4 text-primary hover:bg-accent hover:text-white transition duration-300">Pandas</div>
+                <div class="bg-secondary rounded-full py-2 px-4 text-primary hover:bg-accent hover:text-white transition duration-300">NumPy</div>
+                <div class="bg-secondary rounded-full py-2 px-4 text-primary hover:bg-accent hover:text-white transition duration-300">Matplotlib</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="py-12 px-4 md:px-8 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-6">Experience</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Experience Card 1 -->
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Undergraduate Data Science Researcher</h3>
+                    <p class="text-gray-700 mb-2">Frederick National Laboratory / Purdue University</p>
+                    <p class="text-gray-700">Improved plot loading speeds by implementing dataset caching.</p>
+                </div>
+
+                <!-- Experience Card 2 -->
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Undergraduate Data Science Researcher</h3>
+                    <p class="text-gray-700 mb-2">Microsoft (Minecraft) / Purdue University</p>
+                    <p class="text-gray-700">Gathered and analyzed sentiment regarding Minecraft using data from Instagram and YouTube.</p>
+                </div>
+
+                <!-- Experience Card 3 -->
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Sergeant</h3>
+                    <p class="text-gray-700 mb-2">Republic of Korea Army</p>
+                    <p class="text-gray-700">Oversaw server operations and maintenance, ensuring network security.</p>
+                </div>
+
+                <!-- Experience Card 4 -->
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Volunteer Translator</h3>
+                    <p class="text-gray-700 mb-2">TED Translator</p>
+                    <p class="text-gray-700">Translated TED Talks on various topics - exceeding 10 million views on one translated video.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="py-12 px-4 md:px-8 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-6">Education</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Purdue University</h3>
+                    <p class="text-gray-700">Bachelor of Science in Computer Science, Artificial Intelligence (Expected Dec 2027)</p>
+                    <p class="text-gray-700">Minor in Economics</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-6">Contact</h2>
+            <p class="text-gray-700">
+                +1 765-715-1117 | lee5038@purdue.edu | <a href="https://www.linkedin.com/in/sungmine" class="text-blue-500 hover:underline">linkedin.com/in/sungmine</a>
+            </p>
+        </div>
+    </section>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>

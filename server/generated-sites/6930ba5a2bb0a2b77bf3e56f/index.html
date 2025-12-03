@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sungmin Lee - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'primary': '#667eea',
+              'secondary': '#4CAF50',
+              'accent': '#f0ab00',
+              'bg-light': '#f7fafc',
+            },
+            fontFamily: {
+              'space': ['Space Grotesk', 'sans-serif'],
+              'roboto': ['Roboto', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="font-space bg-gray-100 text-gray-800">
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-primary to-blue-500 text-white py-16">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Sungmin Lee</h1>
+            <p class="text-2xl md:text-3xl">Computer Science & AI Enthusiast</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="container mx-auto py-12 px-6">
+        <h2 class="text-3xl font-semibold mb-6 text-gray-700">About Me</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="md:text-lg">
+                <p>A highly motivated and results-oriented Computer Science student at Purdue University, pursuing a Bachelor of Science degree with a focus on Artificial Intelligence and a minor in Economics. Passionate about leveraging data and technology to solve real-world problems, with experience in chatbot development, data analysis, and research across various industries.</p>
+                <p>Proven ability to collaborate effectively within teams and deliver high-quality results. Committed to continuous learning and exploring innovative approaches to technology.</p>
+            </div>
+            <div class="rounded-lg shadow-lg overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29uc3VsdHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Profile Picture" class="w-full h-64 object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="container mx-auto py-12 px-6">
+        <h2 class="text-3xl font-semibold mb-6 text-gray-700">Technical Skills</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-7 gap-4">
+            <div class="bg-white rounded-full py-1 px-4 shadow-md hover:bg-gray-100 transition-colors">Python</div>
+            <div class="bg-white rounded-full py-1 px-4 shadow-md hover:bg-gray-100 transition-colors">R</div>
+            <div class="bg-white rounded-full py-1 px-4 shadow-md hover:bg-gray-100 transition-colors">Java</div>
+            <div class="bg-white rounded-full py-1 px-4 shadow-md hover:bg-gray-100 transition-colors">C</div>
+            <div class="bg-white rounded-full py-1 px-4 shadow-md hover:bg-gray-100 transition-colors">JavaScript</div>
+            <div class="bg-white rounded-full py-1 px-4 shadow-md hover:bg-gray-100 transition-colors">HTML</div>
+            <div class="bg-white rounded-full py-1 px-4 shadow-md hover:bg-gray-100 transition-colors">CSS</div>
+            <div class="bg-white rounded-full py-1 px-4 shadow-md hover:bg-gray-100 transition-colors">Jupyter Notebook</div>
+            <div class="bg-white rounded-full py-1 px-4 shadow-md hover:bg-gray-100 transition-colors">Git</div>
+            <div class="bg-white rounded-full py-1 px-4 shadow-md hover:bg-gray-100 transition-colors">VS Code</div>
+            <div class="bg-white rounded-full py-1 px-4 shadow-md hover:bg-gray-100 transition-colors">IntelliJ</div>
+            <div class="bg-white rounded-full py-1 px-4 shadow-md hover:bg-gray-100 transition-colors">pandas</div>
+            <div class="bg-white rounded-full py-1 px-4 shadow-md hover:bg-gray-100 transition-colors">NumPy</div>
+            <div class="bg-white rounded-full py-1 px-4 shadow-md hover:bg-gray-100 transition-colors">Matplotlib</div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="container mx-auto py-12 px-6">
+        <h2 class="text-3xl font-semibold mb-6 text-gray-700">Experience</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="md:text-lg">
+                <div class="mb-4">
+                    <h3 class="font-semibold text-gray-700">Undergraduate Data Science Researcher - Microsoft (Minecraft)</h3>
+                    <p class="text-gray-600">The Data Mine - Purdue University | Aug 8, 2024 – May 2025</p>
+                    <p>Gathered, filtered, and analyzed sentiment regarding Minecraft using data from Instagram and YouTube. Conducted sentiment analysis on Instagram post thumbnails using the Llama 3.2 model. Integrated data from comments and videos to produce unified conclusions and trend insights. Stored data and collaborated with the team on Azure Databricks. Designed posters, slides, and videos in preparation for the Symposium.</p>
+                </div>
+                <div class="mb-4">
+                    <h3 class="font-semibold text-gray-700">Undergraduate Data Science Researcher</h3>
+                    <p class="text-gray-600">Frederick National Laboratory | Aug 2025 – Present</p>
+                    <p>Onboarded onto the SPatial Analysis for single Cell (SPAC) project, a Python-based pipeline for analyzing multiplexed single-cell spatial protein data from tissue imaging technologies (MxIF Codex, IMC). Improved plot loading speeds by implementing dataset caching onto the SPAC Shiny App.</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-gray-700">Sergeant</h3>
+                    <p class="text-gray-600">Republic of Korea Army | Aug. 2022 – Jan. 2024</p>
+                    <p>Oversaw server operations and maintenance, ensuring network security and stability in tactical environments. Managed on-site troubleshooting and optimization of system performance, including physical mobile servers. Operated/maintained encrypted communication devices, ensuring secure and reliable communication channels. Collaborated with team members to coordinate communication protocols during field operations.</p>
+                </div>
+            </div>
+            <div class="hidden md:block">
+                <img src="https://images.unsplash.com/photo-1532078295825-0e30d3035245?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHBlbmRpbmclbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Experience Image" class="w-full h-96 object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="bg-primary text-white py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-4">Contact</h2>
+            <p>+1 765-715-1117 | <a href="mailto:lee5038@purdue.edu" class="text-white">lee5038@purdue.edu</a> | <a href="https://www.linkedin.com/in/sungmine" class="text-white">linkedin.com/in/sungmine</a></p>
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "system-ui", "sans-serif";
+  --color-accent: #2563eb;
+  --color-accent-hover: #1d4ed8;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}

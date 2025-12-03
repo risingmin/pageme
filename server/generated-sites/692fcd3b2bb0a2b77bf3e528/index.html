@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sungmin Lee - Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+              extend: {
+                colors: {
+                  'gradient-start': '#e6e6ff',
+                  'gradient-end': '#d9d9ff',
+                  'accent': '#90caf9',
+                }
+              }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f8ff;
+            color: #333;
+            line-height: 1.6;
+        }
+        .gradient-background {
+            background: linear-gradient(to bottom, #e6e6ff, #d9d9ff);
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        .skill-badge {
+            background-color: #90caf9;
+            color: #fff;
+            border-radius: 20px;
+            padding: 4px 12px;
+            margin-right: 10px;
+            display: inline-block;
+        }
+        .skill-badge:hover {
+            background-color: #64b5f6;
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 100%;
+            background-color: #90caf9;
+        }
+
+        .timeline-content {
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+        }
+
+        .timeline-date {
+            font-weight: bold;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-gradient-start py-10 text-center text-white">
+        <h1 class="text-5xl font-bold">Sungmin Lee</h1>
+        <p class="text-2xl mt-4">Aspiring AI Enthusiast | Data Scientist</p>
+    </header>
+
+    <section class="container mx-auto py-12">
+        <div class="card rounded-lg shadow-xl">
+            <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+            <p>A highly motivated Computer Science student at Purdue University with a passion for Artificial Intelligence and Data Science. Proficient in various programming languages and tools, eager to contribute to innovative projects and solve complex problems.</p>
+        </div>
+    </section>
+
+    <section class="container mx-auto py-12">
+        <div class="card rounded-lg shadow-xl">
+            <h2 class="text-3xl font-semibold mb-4">Technical Skills</h2>
+            <div class="flex flex-wrap">
+                <span class="skill-badge">Python</span>
+                <span class="skill-badge">R</span>
+                <span class="skill-badge">Java</span>
+                <span class="skill-badge">C</span>
+                <span class="skill-badge">Javascript</span>
+                <span class="skill-badge">HTML</span>
+                <span class="skill-badge">CSS</span>
+                <span class="skill-badge">Jupyter Notebook</span>
+                <span class="skill-badge">Git</span>
+                <span class="skill-badge">VS Code</span>
+                <span class="skill-badge">IntelliJ</span>
+                <span class="skill-badge">pandas</span>
+                <span class="skill-badge">NumPy</span>
+                <span class="skill-badge">Matplotlib</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mx-auto py-12">
+        <div class="card rounded-lg shadow-xl">
+            <h2 class="text-3xl font-semibold mb-4">Experience</h2>
+            <div class="flex flex-col">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Aug 2025 – Present</span>
+                        <h3>Undergraduate Data Science Researcher - Frederick National Laboratory</h3>
+                        <p>Improved plot loading speeds by implementing dataset caching onto the SPAC Shiny App.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Aug 2024 – May 2025</span>
+                        <h3>Undergraduate Data Science Researcher - Microsoft (Minecraft)</h3>
+                        <p>Gathered, filtered, and analyzed sentiment regarding Minecraft using data from Instagram and YouTube.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Aug. 2022 – Jan. 2024</span>
+                        <h3>Sergeant, Republic of Korea Army</h3>
+                        <p>Oversaw server operations and maintenance, ensuring network security and stability.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Jan. 2020 – Sep. 2021</span>
+                        <h3>Volunteer Translator, TED Translator</h3>
+                        <p>Translated various TED Talks, with one video accumulating over 10 million views.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mx-auto py-12">
+        <div class="card rounded-lg shadow-xl">
+            <h2 class="text-3xl font-semibold mb-4">Projects</h2>
+            <div class="flex flex-col">
+                <div class="flex">
+                    <div class="w-1/2">
+                        <h3>Personal Finance Coach Chatbot</h3>
+                        <p>Developed a chatbot to assist users in managing personal finances using real-time data analysis.</p>
+                    </div>
+                    <div class="w-1/2">
+                        <p>Designed the frontend using React and integrated Flask for backend processing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mx-auto py-12">
+        <div class="card rounded-lg shadow-xl">
+            <h2 class="text-3xl font-semibold mb-4">Education</h2>
+            <p>Purdue University, West Lafayette, IN</p>
+            <p>Bachelor of Science in Computer Science, Artificial Intelligence (Expected Dec 2027)</p>
+            <p>Minor in Economics</p>
+        </div>
+    </section>
+
+    <footer class="bg-gradient-end py-8 text-center text-gray-700">
+        <p>&copy; 2024 Sungmin Lee</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sungmin Lee - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa1cBlalA//uQcScMUUkbCmTycFSO8P+8OkI6o2qOP+uOijiRQrfJoPqM0WazMtd+aZVr3BzR2WVVlnQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(90deg, #4CAF50, #2E7D32);
+            color: white;
+        }
+
+        .skill-badge {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: #2196F3;
+            color: white;
+            border-radius: 25px;
+            margin: 2px;
+            font-weight: bold;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .skill-badge:hover {
+            transform: scale(1.1);
+        }
+
+        .timeline-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .timeline-dot {
+            width: 20px;
+            height: 20px;
+            background-color: #4CAF50;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+
+        .section {
+            padding: 3rem 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Hero Section -->
+        <section class="gradient-bg py-12 text-center">
+            <h1 class="text-4xl font-bold">Sungmin Lee</h1>
+            <p class="text-2xl">Computer Science & AI Enthusiast</p>
+        </section>
+
+        <!-- About Section -->
+        <section class="section">
+            <h2 class="text-3xl font-bold mb-4">About Me</h2>
+            <p>A highly motivated and detail-oriented Computer Science student at Purdue University, pursuing a Bachelor of Science degree with a focus on Artificial Intelligence.  Possessing a strong foundation in programming and data analysis, I am eager to leverage my skills to tackle challenging problems and contribute to innovative solutions. My background includes experience in data science research, server administration, and translation, showcasing adaptability and a commitment to continuous learning.</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section">
+            <h2 class="text-3xl font-bold mb-4">Skills</h2>
+            <div class="flex flex-wrap justify-center">
+                <span class="skill-badge">Python</span>
+                <span class="skill-badge">R</span>
+                <span class="skill-badge">Java</span>
+                <span class="skill-badge">C</span>
+                <span class="skill-badge">JavaScript</span>
+                <span class="skill-badge">HTML</span>
+                <span class="skill-badge">CSS</span>
+                <span class="skill-badge">Jupyter Notebook</span>
+                <span class="skill-badge">Git</span>
+                <span class="skill-badge">VS Code</span>
+                <span class="skill-badge">IntelliJ</span>
+                <span class="skill-badge">pandas</span>
+                <span class="skill-badge">NumPy</span>
+                <span class="skill-badge">Matplotlib</span>
+            </div>
+        </section>
+
+        <!-- Experience Section (Timeline) -->
+        <section class="section">
+            <h2 class="text-3xl font-bold mb-4">Experience</h2>
+
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="w-full md:w-1/2">
+                    <div class="timeline-card">
+                        <span class="timeline-dot"></span>
+                        <h3 class="text-xl font-semibold mb-2">Undergraduate Data Science Researcher - Frederick National Laboratory The Data Mine - Purdue University</h3>
+                        <p class="text-gray-700">Aug 2025 – Present</p>
+                        <p class="text-gray-700">Onboarded onto the SPacial Analysis for single Cell (SPAC) project, a Python-based pipeline for analyzing multiplexed single-cell spatial protein data.</p>
+                    </div>
+                    <div class="timeline-card">
+                        <span class="timeline-dot"></span>
+                        <h3 class="text-xl font-semibold mb-2">Undergraduate Data Science Researcher - Microsoft (Minecraft) The Data Mine - Purdue University</h3>
+                        <p class="text-gray-700">Aug 2024 – May 2025</p>
+                        <p class="text-gray-700">Gathered and analyzed sentiment regarding Minecraft using data from Instagram and YouTube.</p>
+                    </div>
+                </div>
+
+                <div class="w-full md:w-1/2">
+                    <div class="timeline-card">
+                        <span class="timeline-dot"></span>
+                        <h3 class="text-xl font-semibold mb-2">Sergeant</h3>
+                        <p class="text-gray-700">Aug. 2022 – Jan. 2024</p>
+                        <p class="text-gray-700">Oversaw server operations and maintenance in tactical environments.</p>
+                    </div>
+                    <div class="timeline-card">
+                        <span class="timeline-dot"></span>
+                        <h3 class="text-xl font-semibold mb-2">Volunteer Translator - TED Translator</h3>
+                        <p class="text-gray-700">Jan. 2020 – Sep. 2021</p>
+                        <p class="text-gray-700">Translated TED Talks on various topics.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="section">
+            <h2 class="text-3xl font-bold mb-4">Education</h2>
+            <div class="container">
+                <p><strong>Purdue University</strong>, West Lafayette, IN</p>
+                <p>Bachelor of Science in Computer Science, Artificial Intelligence (Expected Dec 2027)</p>
+                <p>Minor in Economics</p>
+                <p>Relevant Coursework: CS 18200, CS 17600, CS 24300, MA 35100</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section bg-gray-100 py-8">
+            <h2 class="text-3xl font-bold mb-4 text-center">Contact</h2>
+            <div class="container flex justify-center">
+                <div class="flex flex-col items-center">
+                    <p>+1 765-715-1117</p>
+                    <p>lee5038@purdue.edu</p>
+                    <a href="https://www.linkedin.com/in/sungmine" class="text-blue-500 hover:underline">linkedin.com/in/sungmine</a>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>
